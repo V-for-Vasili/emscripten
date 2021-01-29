@@ -1057,6 +1057,7 @@ function addAtInit(code) {
 global.ATMAINS = [];
 
 function addAtMain(code) {
+  assert(!MINIMAL_RUNTIME);
   ATMAINS.push(code);
 }
 
